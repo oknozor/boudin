@@ -1,0 +1,17 @@
+[package]
+name = "boudin"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iced = { version = "0.10.0", features = ["tokio"] }
+iced_futures = "0.7.0"
+iced_core = "0.10.0"
+once_cell = "1.19.0"
+anyhow = "1.0.79"
+rdkafka = { version = "0.36.2", features = ["cmake-build"] }
+tokio = { version = "1.36.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
